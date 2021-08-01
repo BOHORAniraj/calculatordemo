@@ -32,10 +32,12 @@ body {
   gap: 1rem;
   grid-template-columns: auto;
   grid-template-areas:
+    "OFF OFF OFF OFF"
     "clear clean divide multi"
-    "eight nine zero minus"
+    "seven eight nine  minus"
     "four five six add"
-    "three two one ans";
+    "three two one zero"
+    "ans ans ans ans";
 }
 .items > * {
   /* width: 80px; */
@@ -71,6 +73,9 @@ body {
 .four {
   grid-area: four;
 }
+.seven {
+  grid-area: seven;
+}
 .five {
   grid-area: five;
 }
@@ -91,4 +96,7 @@ body {
 }
 .ans {
   grid-area: ans;
+}
+.OFF {
+  grid-area: OFF;
 }
